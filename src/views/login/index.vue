@@ -107,9 +107,9 @@ useEventListener(document, "keydown", ({ code }) => {
       </div>
       <div class="login-box">
         <div class="login-form">
-          <avatar class="avatar" />
+          <!--          <avatar class="avatar" />-->
           <Motion>
-            <h2 class="outline-hidden">{{ title }}</h2>
+            <h2 class="outline-hidden">行业终端测试看板</h2>
           </Motion>
 
           <el-form

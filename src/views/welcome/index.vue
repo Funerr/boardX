@@ -8,6 +8,7 @@ import { useRenderFlicker } from "@/components/ReFlicker";
 import { ChartBar, ChartLine, ChartRound } from "./components/charts";
 import Segmented, { type OptionsType } from "@/components/ReSegmented";
 import { chartData, barChartData, progressData, latestNewsData } from "./data";
+import { Ganta } from "./components/ganta";
 
 defineOptions({
   name: "Welcome"
@@ -109,15 +110,11 @@ const optionsBasis: Array<OptionsType> = [
       >
         <el-card class="bar-card" shadow="never">
           <div class="flex justify-between">
-            <span class="text-md font-medium">分析概览</span>
+            <span class="text-md font-medium">项目周期</span>
             <Segmented v-model="curWeek" :options="optionsBasis" />
           </div>
-          <div class="flex justify-between items-start mt-3">
-            <ChartBar
-              :requireData="barChartData[curWeek].requireData"
-              :questionData="barChartData[curWeek].questionData"
-            />
-          </div>
+
+          <ganta> </ganta>
         </el-card>
       </re-col>
 

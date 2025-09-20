@@ -12,12 +12,12 @@ export function useColumns() {
   const columns: TableColumnList = [
     {
       sortable: true,
-      label: "序号",
+      label: "自动化线",
       prop: "id"
     },
     {
       sortable: true,
-      label: "需求人数",
+      label: "用例总数",
       prop: "requiredNumber",
       filterMultiple: false,
       filterClassName: "pure-table-filter",
@@ -33,27 +33,27 @@ export function useColumns() {
     },
     {
       sortable: true,
-      label: "提问数量",
+      label: "通过用例数",
       prop: "questionNumber"
     },
     {
       sortable: true,
-      label: "解决数量",
+      label: "失败用例数",
       prop: "resolveNumber"
     },
     {
       sortable: true,
-      label: "用户满意度",
+      label: "成功率",
       minWidth: 100,
       prop: "satisfaction",
       cellRenderer: ({ row }) => (
         <div class="flex justify-center w-full">
           <span class="flex items-center w-[60px]">
             <span class="ml-auto mr-2">{row.satisfaction}%</span>
-            <iconifyIconOffline
-              icon={row.satisfaction > 98 ? Hearts : ThumbUp}
-              color="#e85f33"
-            />
+            {/*<iconifyIconOffline*/}
+            {/*  icon={row.satisfaction > 98 ? Hearts : ThumbUp}*/}
+            {/*  color="#e85f33"*/}
+            {/*/>*/}
           </span>
         </div>
       )
@@ -64,7 +64,7 @@ export function useColumns() {
       prop: "date"
     },
     {
-      label: "操作",
+      label: "查看报告",
       fixed: "right",
       slot: "operation"
     }

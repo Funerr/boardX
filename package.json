@@ -42,12 +42,8 @@
     "url": "https://github.com/pure-admin/vue-pure-admin/issues"
   },
   "license": "MIT",
-  "author": {
-    "name": "xiaoxian521",
-    "email": "pureadmin@163.com",
-    "url": "https://github.com/xiaoxian521"
-  },
   "dependencies": {
+    "@infectoone/vue-ganttastic": "^2.3.2",
     "@pureadmin/descriptions": "^1.2.1",
     "@pureadmin/table": "^3.3.0",
     "@pureadmin/utils": "^2.6.2",
